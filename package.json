@@ -1,0 +1,17 @@
+{
+  "name": "equipment-tracker",
+  "version": "1.0.0",
+  "description": "WhatsApp-based construction equipment tracking system",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node scripts/migrate.js && node src/server.js",
+    "migrate": "node scripts/migrate.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0"
+  }
+}
